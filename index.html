@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Sertifikat</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner container">
+            <nav class="nav-brand">
+                <img src="assets/images/logo.png" alt="logo">
+                <a href="#" class="logo">SortTif</a>
+            </nav>
+            
+            <div class="search-box">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="searchInput" placeholder="Cari sertifikat...">
+            </div>
+
+            <div class="profile-section">
+                <img src="assets/images/photo profile.png" alt="photo profile" class="profile-img">
+                <div class="profile-text">
+                    <h1 class="profile-name">Amanda Mahendra</h1>
+                    <p class="profile-institution">Universitas Teuku Umar</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="main-content container">
+        
+        <!-- Tombol filter -->
+        <section class="toolbar">
+            <div class="category-filters" id="categoryFilters">
+                <button class="filter-btn active" data-category="all">Semua</button>
+                <button class="filter-btn" data-category="ui-ux">UI/UX Design</button>
+                <button class="filter-btn" data-category="cms">CMS</button>
+                <button class="filter-btn" data-category="full-stack">Full Stack Developer</button>
+                <button class="filter-btn" data-category="ai-engineer">AI Engineer</button>
+            </div>
+            
+            <div class="cert-counter">
+                Total: <span id="totalCerts">3</span> Sertifikat
+            </div>
+        </section>
+
+        <!-- Galeri Sertifikat -->
+        <section class="gallery-grid" id="galleryGrid">
+            
+            <section class="gallery-grid" id="galleryGrid">
+                <!-- Munculnya sertifikat -->
+            </section>
+            
+
+        </section>
+
+
+    </main>
+    </main>
+
+    <!-- Modal untuk zoom / baca sertifikat -->
+    <div class="modal-overlay" id="certModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <img src="" alt="Zoom Sertifikat" id="modalImg" class="modal-img">
+            <h3 id="modalTitle" class="modal-title">Judul Sertifikat</h3>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Amanda Mahendra. Dokumentasi Portofolio Personal.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
